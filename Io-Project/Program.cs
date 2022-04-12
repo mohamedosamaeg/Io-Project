@@ -14,6 +14,7 @@ for (; ; )
 
     {
         for (; ; )
+
         {
             Console.WriteLine("choose action\n" +
                 "1.Report Folder!\n"+
@@ -35,16 +36,15 @@ for (; ; )
                                 {
                                     DateTime LastAccessDate = File.GetLastAccessTime(FilePath);
                                     Console.WriteLine("Enter Date Plz");
-                                    DateTime lastAccessDate = Convert.ToDateTime(Console.ReadLine());
+                                    DateTime lastAccessDateOfFile = Convert.ToDateTime(Console.ReadLine());
 
-                                    string FileExtention = Path.GetExtension(FilePath);
-                                    if ((FilePath > File.LastAccessDate);
+                                    if (lastAccessDateOfFile > LastAccessDate)
                                     {
-                                        FolderReportDto.Where(FilePath > LastAccessDate);
+                                        FolderReportDtos.Add(FilePath > LastAccessDate);
                                     }
                                     else
                                     {
-                                        FolderReportDto.Where(FilePath < LastAccessDate);
+                                        FolderReportDtos.Add(FilePath < LastAccessDate);
                                     }
                                 }
                             }
